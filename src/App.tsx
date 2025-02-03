@@ -1,12 +1,29 @@
-import { Button, TextField } from "@mui/material"
+import { Box, Button, Stack } from "@mui/material"
 
 function App() {
 
   return (
     <>
       <p>Hello world</p>
-      <TextField id="outlined-basic" label="test" variant="outlined" size="small" />
-      <Button variant="contained">Primary</Button>
+      <Stack spacing={1}>
+        <Button sx={{
+          borderBottom:1,
+          justifyContent: "center"
+        }}>
+          Item 1
+        </Button>
+        <Button sx={{
+          borderBottom:1,
+        }}>
+          Item 2
+        </Button>
+        <Button sx={{
+          borderBottom:1,
+        }}>
+          Item 3
+        </Button>
+        
+      </Stack>
     </>
   )
 }
